@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Placement Platform - SIH 2025 Solution</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>PlacementHub</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#problem" class="nav-link">Problem</a></li>
+                <li><a href="#solution" class="nav-link">Solution</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#tech" class="nav-link">Technology</a></li>
+                <li><a href="#startup" class="nav-link">Startup Plan</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Revolutionizing Campus Placements
+                    <span class="highlight">with Smart Technology</span>
+                </h1>
+                <p class="hero-description">
+                    A comprehensive platform solving SIH Problem Statement ID 25106 - transforming 
+                    chaotic placement processes into streamlined, transparent, and data-driven experiences 
+                    for students, placement cells, and recruiters.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('solution')">
+                        <i class="fas fa-rocket"></i>
+                        Explore Solution
+                    </button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('features')">
+                        <i class="fas fa-play"></i>
+                        Watch Demo
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">10,000+</span>
+                        <span class="stat-label">Colleges</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">5M+</span>
+                        <span class="stat-label">Students</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">95%</span>
+                        <span class="stat-label">Efficiency</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="dashboard-preview">
+                    <div class="dashboard-header">
+                        <div class="dashboard-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <span class="dashboard-title">Student Dashboard</span>
+                    </div>
+                    <div class="dashboard-content">
+                        <div class="dashboard-card">
+                            <i class="fas fa-user-circle"></i>
+                            <div class="card-info">
+                                <h4>Profile Complete</h4>
+                                <p>Skills & Achievements</p>
+                            </div>
+                        </div>
+                        <div class="dashboard-card">
+                            <i class="fas fa-briefcase"></i>
+                            <div class="card-info">
+                                <h4>5 Applications</h4>
+                                <p>Active Opportunities</p>
+                            </div>
+                        </div>
+                        <div class="dashboard-card">
+                            <i class="fas fa-calendar-check"></i>
+                            <div class="card-info">
+                                <h4>2 Interviews</h4>
+                                <p>Scheduled This Week</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section id="problem" class="problem">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">The Current Problem</h2>
+                <p class="section-subtitle">SIH Problem Statement ID 25106 highlights critical inefficiencies</p>
+            </div>
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Scattered Communication</h3>
+                    <p>Opportunities scattered across WhatsApp groups, emails, and notice boards creating confusion and missed deadlines.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Manual Processes</h3>
+                    <p>Heavy reliance on spreadsheets, physical documentation, and endless office visits for approvals.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>No Analytics</h3>
+                    <p>Lack of real-time insights into placement statistics, trends, and individual student progress.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Inequality</h3>
+                    <p>Students from less connected backgrounds suffer more when processes are manual and fragmented.</p>
+                </div>
+            </div>
+            <div class="problem-impact">
+                <h3>Impact on Stakeholders</h3>
+                <div class="impact-grid">
+                    <div class="impact-item">
+                        <h4>Students</h4>
+                        <ul>
+                            <li>Missed deadlines and opportunities</li>
+                            <li>Uncertainty about application status</li>
+                            <li>No systematic skill documentation</li>
+                        </ul>
+                    </div>
+                    <div class="impact-item">
+                        <h4>Placement Cells</h4>
+                        <ul>
+                            <li>Excessive administrative burden</li>
+                            <li>Limited time for career guidance</li>
+                            <li>Poor data visibility</li>
+                        </ul>
+                    </div>
+                    <div class="impact-item">
+                        <h4>Faculty</h4>
+                        <ul>
+                            <li>Manual verification processes</li>
+                            <li>Complex scheduling coordination</li>
+                            <li>Limited student visibility</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section id="solution" class="solution">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Comprehensive Solution</h2>
+                <p class="section-subtitle">Integrated campus-centric software platform with dual components</p>
+            </div>
+            <div class="solution-container">
+                <div class="solution-visual">
+                    <div class="platform-diagram">
+                        <div class="platform-component student-app">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h4>Student App</h4>
+                            <p>Interactive profiles, opportunity dashboard, real-time tracking</p>
+                        </div>
+                        <div class="platform-component admin-dashboard">
+                            <i class="fas fa-desktop"></i>
+                            <h4>Admin Dashboard</h4>
+                            <p>Opportunity management, application processing, analytics</p>
+                        </div>
+                        <div class="platform-component backend">
+                            <i class="fas fa-server"></i>
+                            <h4>Python Backend</h4>
+                            <p>Django framework, PostgreSQL, REST APIs</p>
+                        </div>
+                        <div class="connection-lines">
+                            <div class="line line-1"></div>
+                            <div class="line line-2"></div>
+                            <div class="line line-3"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="solution-content">
+                    <h3>Transparent, Data-Driven Ecosystem</h3>
+                    <p>Our platform creates a unified digital workflow that replaces scattered communication channels with structured, efficient processes.</p>
+                    <div class="solution-benefits">
+                        <div class="benefit">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Real-time opportunity tracking</span>
+                        </div>
+                        <div class="benefit">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Automated approval workflows</span>
+                        </div>
+                        <div class="benefit">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Comprehensive analytics</span>
+                        </div>
+                        <div class="benefit">
+                            <i class="fas fa-check-circle"></i>
+                            <span>AI-powered recommendations</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Platform Features</h2>
+                <p class="section-subtitle">Comprehensive tools for all stakeholders</p>
+            </div>
+            <div class="features-tabs">
+                <button class="tab-btn active" onclick="showTab('student')">Student App</button>
+                <button class="tab-btn" onclick="showTab('admin')">Admin Dashboard</button>
+                <button class="tab-btn" onclick="showTab('ai')">AI Features</button>
+            </div>
+            <div class="features-content">
+                <div id="student-tab" class="tab-content active">
+                    <div class="feature-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <h3>Dynamic Profile System</h3>
+                            <p>LinkedIn-style profiles with semester-wise skill tracking, achievement portfolios, and resume management.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <h3>Opportunity Discovery</h3>
+                            <p>Curated opportunities with automatic eligibility matching and one-click applications.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3>Status Tracking</h3>
+                            <p>Real-time application status updates with timeline views and automatic notifications.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-bell"></i>
+                            </div>
+                            <h3>Smart Notifications</h3>
+                            <p>Push notifications for new opportunities, status updates, and interview schedules.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="admin-tab" class="tab-content">
+                    <div class="feature-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-plus-circle"></i>
+                            </div>
+                            <h3>Opportunity Management</h3>
+                            <p>Create, publish, and manage verified internships and placement opportunities.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-users-cog"></i>
+                            </div>
+                            <h3>Application Processing</h3>
+                            <p>Real-time application review with batch processing and approval workflows.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <h3>Analytics Dashboard</h3>
+                            <p>Live statistics, placement trends, and performance analytics for data-driven decisions.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <h3>Certificate Generation</h3>
+                            <p>Automated certificate generation with digital signatures and verification systems.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="ai-tab" class="tab-content">
+                    <div class="feature-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h3>Smart Recommendations</h3>
+                            <p>AI-powered opportunity matching based on student profiles and skill analysis.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <h3>Intelligent Scheduling</h3>
+                            <p>Automated interview scheduling considering all stakeholders' availability.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-crystal-ball"></i>
+                            </div>
+                            <h3>Predictive Analytics</h3>
+                            <p>Student success prediction and early intervention for at-risk students.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-chart-pie"></i>
+                            </div>
+                            <h3>Market Intelligence</h3>
+                            <p>Industry trend analysis and skill demand forecasting for curriculum planning.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section id="tech" class="tech">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technology Stack</h2>
+                <p class="section-subtitle">Robust Python backend with modern frontend</p>
+            </div>
+            <div class="tech-stack">
+                <div class="tech-category">
+                    <h3>Backend (Python)</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <i class="fab fa-python"></i>
+                            <span>Django Framework</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-database"></i>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-server"></i>
+                            <span>Django REST API</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-tasks"></i>
+                            <span>Celery</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3>Frontend</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <i class="fab fa-react"></i>
+                            <span>React.js</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>React Native</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-palette"></i>
+                            <span>Material-UI</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>Chart.js</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3>AI & Analytics</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <i class="fas fa-brain"></i>
+                            <span>Machine Learning</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-search"></i>
+                            <span>Recommendation Engine</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Predictive Analytics</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-eye"></i>
+                            <span>OCR Processing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="architecture-diagram">
+                <h3>System Architecture</h3>
+                <div class="arch-flow">
+                    <div class="arch-step">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>Student App</span>
+                    </div>
+                    <div class="arch-arrow">→</div>
+                    <div class="arch-step">
+                        <i class="fas fa-server"></i>
+                        <span>Python Backend</span>
+                    </div>
+                    <div class="arch-arrow">→</div>
+                    <div class="arch-step">
+                        <i class="fas fa-database"></i>
+                        <span>PostgreSQL</span>
+                    </div>
+                    <div class="arch-arrow">→</div>
+                    <div class="arch-step">
+                        <i class="fas fa-desktop"></i>
+                        <span>Admin Dashboard</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Startup Plan Section -->
+    <section id="startup" class="startup">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Startup Vision & Business Model</h2>
+                <p class="section-subtitle">Transforming placement management into a scalable business</p>
+            </div>
+            <div class="startup-content">
+                <div class="startup-visual">
+                    <div class="business-model">
+                        <div class="model-card">
+                            <h3>B2B SaaS Model</h3>
+                            <div class="pricing-tiers">
+                                <div class="tier">
+                                    <h4>Basic Plan</h4>
+                                    <div class="price">₹50,000<span>/year</span></div>
+                                    <p>Up to 500 students</p>
+                                </div>
+                                <div class="tier">
+                                    <h4>Professional</h4>
+                                    <div class="price">₹1,00,000<span>/year</span></div>
+                                    <p>500-1500 students</p>
+                                </div>
+                                <div class="tier">
+                                    <h4>Enterprise</h4>
+                                    <div class="price">₹2,00,000<span>/year</span></div>
+                                    <p>1500+ students</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="startup-details">
+                    <h3>Market Opportunity</h3>
+                    <div class="market-stats">
+                        <div class="market-stat">
+                            <span class="stat-number">10,000+</span>
+                            <span class="stat-label">Technical Colleges</span>
+                        </div>
+                        <div class="market-stat">
+                            <span class="stat-number">5M+</span>
+                            <span class="stat-label">Students</span>
+                        </div>
+                        <div class="market-stat">
+                            <span class="stat-number">₹500Cr</span>
+                            <span class="stat-label">Market Size</span>
+                        </div>
+                    </div>
+                    <div class="competitive-advantages">
+                        <h4>Competitive Advantages</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Campus-centric approach vs global platforms</li>
+                            <li><i class="fas fa-check"></i> Real-time tracking and transparency</li>
+                            <li><i class="fas fa-check"></i> AI-powered insights and recommendations</li>
+                            <li><i class="fas fa-check"></i> Cost-effective solution for colleges</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="roadmap">
+                <h3>Implementation Roadmap</h3>
+                <div class="roadmap-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>Phase 1: Foundation (Months 1-6)</h4>
+                            <p>Core platform development, pilot program with 2-3 colleges</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>Phase 2: Enhancement (Months 7-12)</h4>
+                            <p>AI features, mobile app, scale to 10-15 colleges</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>Phase 3: Growth (Months 13-18)</h4>
+                            <p>Advanced analytics, expand to 50+ colleges</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>Phase 4: Scale (Months 19-24)</h4>
+                            <p>National expansion, 200+ colleges, innovation features</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Ready to transform your campus placement process?</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Discuss Your Needs</h3>
+                    <p>Whether you're a college looking to streamline placements or a student interested in this solution, we'd love to hear from you.</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <span>contact@placementhub.com</span>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 98765 43210</span>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Bangalore, India</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="">Select Your Role</option>
+                                <option value="student">Student</option>
+                                <option value="placement-officer">Placement Officer</option>
+                                <option value="faculty">Faculty Member</option>
+                                <option value="recruiter">Recruiter</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>PlacementHub</span>
+                    </div>
+                    <p>Revolutionizing campus placements with smart technology and data-driven insights.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Solution</h4>
+                    <ul>
+                        <li><a href="#problem">Problem Analysis</a></li>
+                        <li><a href="#solution">Our Solution</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#tech">Technology</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Business</h4>
+                    <ul>
+                        <li><a href="#startup">Startup Plan</a></li>
+                        <li><a href="#startup">Pricing</a></li>
+                        <li><a href="#startup">Roadmap</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">API Reference</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PlacementHub. All rights reserved. | SIH 2025 Problem Statement ID 25106 Solution</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
